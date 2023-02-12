@@ -1,5 +1,14 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.serch-section {
+img {
+  display: block;
+  max-width: 100%;
+}
+input,
+button {
+  padding: 5px;
+  border-radius: 4px;
+}
+.serch-bar {
   position: sticky;
   top: 0;
 }
@@ -16,4 +25,29 @@
 .load-more {
   display: block;
   margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+}
+
+.info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-around;
+  font-family: inherit;
+  font-weight: 500;
+}
+.load-more {
+  background-color: cornflowerblue;
+
+  border-color: 1px solid black;
+}
+.load-more.hidden {
+  display: none;
 }
